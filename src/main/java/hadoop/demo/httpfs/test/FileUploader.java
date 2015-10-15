@@ -11,8 +11,12 @@ public class FileUploader
     public static void main( String[] args ) throws IOException
     {
     	FileUploader uploader = new FileUploader();
-    	System.out.println(args[1]);
-        uploader.uploadFile(args[1], args[2]);
+    	String inputRoot = "C:\\Users\\Jax\\Desktop\\";
+    	String inputFileName = "aaa.txt";
+    	
+    	String outputRoot = "/demo/";
+    	
+        uploader.uploadFile(inputRoot + inputFileName, outputRoot + inputFileName);
     }
     
    public void uploadFile(String inputPath, String outputPath) throws IOException
